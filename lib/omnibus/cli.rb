@@ -89,6 +89,10 @@ module Omnibus
       end
     end
 
+
+    register(Command::ChangeLog, 'changelog', 'changelog [COMMAND]', 'Create and view changelogs')
+    CLI.tasks['changelog'].options = Command::ChangeLog.class_options
+
     #
     # Perform cache management functions.
     #
