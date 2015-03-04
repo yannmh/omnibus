@@ -77,7 +77,7 @@ module Omnibus
 
       create_required_directories
       download
-      verify_checksum!
+      # verify_checksum!
       extract
     end
 
